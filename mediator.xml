@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<nodes>
+    <node id="0">
+		<ip>localhost</ip>
+		<tcpPort>6000</tcpPort>
+	</node>
+   	<node id="1">
+		<ip>localhost</ip>
+		<tcpPort>6001</tcpPort>
+	</node>
+	<node id="2">
+		<ip>localhost</ip>
+		<tcpPort>6002</tcpPort>
+	</node>
+	<node id="3">
+		<ip>localhost</ip>
+		<tcpPort>6003</tcpPort>
+	</node>
+	<node id="4">
+		<ip>localhost</ip>
+		<tcpPort>6004</tcpPort>
+	</node>
+	<node id="5">
+		<ip>localhost</ip>
+		<tcpPort>6005</tcpPort>
+	</node>
+</nodes>

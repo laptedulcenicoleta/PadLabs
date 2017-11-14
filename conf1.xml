@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<nodes>
+    <thisNode id="1">
+         <ip>localhost</ip>
+		<tcpPort>6001</tcpPort>
+    </thisNode>
+	<node id="2">
+		<ip>localhost</ip>
+		<tcpPort>6002</tcpPort>
+	</node>
+
+</nodes>
