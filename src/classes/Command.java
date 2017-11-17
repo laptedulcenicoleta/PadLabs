@@ -62,7 +62,7 @@ public class Command {
 		String con = listNodes.size() + "";
 
 		String res = "{\"nodeId\":\"" + thisNode.getId() + "\",\"nodeIP\":\"" + thisNode.getNodeIp()
-				+ "\",\"tcpPort\":\"" + thisNode.getTcpPort() + "\",\"connections\":\"" + con + "\"}";
+				+ "\",\"tcpPort\":\"" + thisNode.getTcpPort() + "\",\"connections\":\"" + con +"\"}";
 
 		tcp.tcpSend(res, server);
 	}

@@ -19,7 +19,7 @@ public class Client {
     static Mediator mediator = new Mediator();
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-	    Socket soket = new Socket("localhost", 5555);
+	    Socket soket = new Socket("localhost", 7777);
 	    Message mes = new Message("command", "get", "bestNode");
 	    Gson gson = new Gson();
 	    String jmes = gson.toJson(mes);
@@ -30,7 +30,7 @@ public class Client {
         System.out.println("TCP Port: " + portTcp);
         comunication();
 
-        int port = 5000;
+        int port = 7000;
 	    String group = "225.4.5.6";
 	    String message = "Get info";
 	    UdpTool udp = new UdpTool();

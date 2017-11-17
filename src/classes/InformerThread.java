@@ -24,7 +24,7 @@ public class InformerThread extends Thread {
 		listNodes = XmlParser.getNodeList(configFile);
 
 		new TcpServer(thisNode).start();
-		int port = 5000;
+		int port = 7000;
 		String group = "225.4.5.6";
 
 		UdpTool udp = new UdpTool();
@@ -39,7 +39,7 @@ public class InformerThread extends Thread {
 				String con = listNodes.size() + "";
 
 				String res = "{\"nodeId\":\"" + thisNode.getId() + "\",\"nodeIP\":\"" + thisNode.getNodeIp()
-						+ "\",\"tcpPort\":\"" + thisNode.getTcpPort() + "\",\"connections\":\"" + con + "\"}";
+						+ "\",\"tcpPort\":\"" + thisNode.getTcpPort() + "\"}";
 				udp.sendResponceToClient(res, receivePacket, port, group);
 			}
 		} catch (IOException e) {

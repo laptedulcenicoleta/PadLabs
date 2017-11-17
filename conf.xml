@@ -3,6 +3,6 @@
 <nodes>
     <thisNode id="0">
          <ip>localhost</ip>
-		<tcpPort>6000</tcpPort>
+		<tcpPort>5000</tcpPort>
     </thisNode>
 </nodes>

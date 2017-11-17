@@ -3,24 +3,22 @@
 <nodes>
     <thisNode id="3">
          <ip>localhost</ip>
-		<tcpPort>6003</tcpPort>
+		<tcpPort>5003</tcpPort>
     </thisNode>
+	<node id="0">
+		<ip>localhost</ip>
+		<tcpPort>5000</tcpPort>
+	</node>
+	<node id="1">
+		<ip>localhost</ip>
+		<tcpPort>5001</tcpPort>
+	</node>
 	<node id="2">
 		<ip>localhost</ip>
-		<tcpPort>6002</tcpPort>
+		<tcpPort>5002</tcpPort>
 	</node>
-
-	<node id="4">
+	<node id="3">
 		<ip>localhost</ip>
-		<tcpPort>6004</tcpPort>
+		<tcpPort>5003</tcpPort>
 	</node>
-		<node id="5">
-		<ip>localhost</ip>
-		<tcpPort>6005</tcpPort>
-	</node>
-		<node id="0">
-		<ip>localhost</ip>
-		<tcpPort>6000</tcpPort>
-	</node>
-
 </nodes>

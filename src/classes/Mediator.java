@@ -16,7 +16,7 @@ import tools.XmlParser;
 
 public class Mediator {
 	static ArrayList<InfNode> listNodes = new ArrayList<InfNode>();
-	static int port = 5555;
+	static int port = 7777;
 
 	public static void main(String[] args) throws IOException {
 		TcpTool tcp = new TcpTool();

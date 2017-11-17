@@ -3,11 +3,14 @@
 <nodes>
     <thisNode id="5">
          <ip>localhost</ip>
-		<tcpPort>6005</tcpPort>
+		<tcpPort>5005</tcpPort>
     </thisNode>
 	<node id="4">
 		<ip>localhost</ip>
-		<tcpPort>6004</tcpPort>
+		<tcpPort>5004</tcpPort>
 	</node>
-
+	<node id="5">
+		<ip>localhost</ip>
+		<tcpPort>5005</tcpPort>
+	</node>
 </nodes>
