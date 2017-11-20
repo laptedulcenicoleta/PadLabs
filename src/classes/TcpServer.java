@@ -36,7 +36,6 @@ public class TcpServer extends Thread {
 				System.out.println("Socket timed out!");
 				break;
 			} catch (IOException e) {
-
 				System.out.println("Client is deconectat!");
 				e.printStackTrace();
 				break;

@@ -23,7 +23,6 @@ public class Mediator {
 		try {
 			ServerSocket serverSocket = new ServerSocket(port);
 			while (true) {
-
 				System.out.println("Waiting for client on port " + port );
 				Socket server = serverSocket.accept();
 				String receiveMessage = tcp.tcpReceive(server);
@@ -31,14 +30,12 @@ public class Mediator {
 				String message = getAttribute("message", receiveMessage);
 
 				if (message.equals("bestNode")) {
-
 					tcp.tcpSend(getPortMaxNode(), server);
 				}
 
 				server.close();
 			}
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
 
@@ -65,10 +62,8 @@ public class Mediator {
 				max = con;
 				best = res;
 			}
-
 		}
 		return best;
-
 	}
 
 	public static String getAttribute(String key, String input) {

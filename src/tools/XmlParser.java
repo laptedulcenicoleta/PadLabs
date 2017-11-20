@@ -38,7 +38,6 @@ public class XmlParser {
 					infNode.setNodeIp(eElement.getElementsByTagName("ip").item(0).getTextContent());
 					infNode.setTcpPort(
 							Integer.parseInt(eElement.getElementsByTagName("tcpPort").item(0).getTextContent()));
-
 				}
 			}
 		} catch (Exception e) {

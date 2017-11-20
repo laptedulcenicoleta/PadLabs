@@ -36,14 +36,12 @@ public class InformerThread extends Thread {
 				receivePacket = udp.reciveMulticast(group, port);
 
 				listNodes = XmlParser.getNodeList(configFile);
-				String con = listNodes.size() + "";
 
 				String res = "{\"nodeId\":\"" + thisNode.getId() + "\",\"nodeIP\":\"" + thisNode.getNodeIp()
 						+ "\",\"tcpPort\":\"" + thisNode.getTcpPort() + "\"}";
 				udp.sendResponceToClient(res, receivePacket, port, group);
 			}
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
 
