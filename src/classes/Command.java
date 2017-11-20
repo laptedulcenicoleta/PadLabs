@@ -30,21 +30,16 @@ public class Command {
 		this.thisNode = thisNode;
 	}
 
-	public void execute() throws InstantiationException, IllegalAccessException, SecurityException,
-			IllegalArgumentException, InvocationTargetException, JSONException {
-		String nameMethod = getAttribute("message", jsonCommand);
-		Class params[] = {};
-		Class cls = this.getClass();
-		Method method;
-		try {
-			method = cls.getDeclaredMethod(nameMethod, params);
-			method.invoke(this, null);
-		} catch (NoSuchMethodException e) {
-			tcp.tcpSend("HAHA Command not found :P", server);
-			System.out.println("HAHA Command not found   :P");
-		}
-
-	}
+	public void execute() throws InstantiationException, IllegalAccessException, InvocationTargetException{
+		String nameMethod = mediator.getAttribute("message", jsonCommand);
+		if(nameMethod.equals("all"))
+		{   this.all();
+		    }else if(nameMethod.equals("about")){
+		          this.about();
+            }else if (nameMethod.equals("getInfoByNode")){
+		          this.getInfoByNode();
+            }else {System.out.println("Command not found");}
+    }
 
 	public void all() {
 		Message mes = new Message("command", "get", "getInfoByNode");

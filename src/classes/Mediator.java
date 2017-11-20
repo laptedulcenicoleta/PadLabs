@@ -60,11 +60,14 @@ public class Mediator {
 			String res = tcp.tcpReceive(soket);
 
 			int con = Integer.parseInt(getAttribute("connections", res));
-
+          for(int i=con; i>0; i--){
+          	con=i;
 			if (con >= max) {
 				max = con;
 				best = res;
 			}
+
+		  }
 		}
 		return best;
 
