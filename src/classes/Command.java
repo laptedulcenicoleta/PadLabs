@@ -80,9 +80,5 @@ public class Command {
 		}
 		return listResp;
 	}
-	public String getAttribute(String key, String input) throws JSONException {
-		JSONObject jObject = new JSONObject(input);
-		String command = jObject.getString(key);
-		return command;
-	}
+
 }
