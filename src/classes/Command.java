@@ -1,15 +1,13 @@
 package classes;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.ArrayList;
 import com.google.gson.Gson;
 import colections.Message;
 import colections.Worker;
 import tools.TcpTool;
-import org.json.JSONException;
-import org.json.JSONObject;
+
 
 public class Command {
 	ArrayList<InfNode> listNodes = new ArrayList<InfNode>();
